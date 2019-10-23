@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+
+	<title>Revisit</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+	body {font-family: Arial, Helvetica, sans-serif;}
+	* {box-sizing: border-box;}
+
+	input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+	}
+
+button {
+  background-color: #30E1E9;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #25A4AA;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #F2F2F2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+	<h3>Revisit</h3>
+	<div class="container">
+		<div action=""> <!-- Aciton here -->
+			<div class="container">
+				<label for="firstNameRe">First Name</label>
+				<input type="text" placeholder="First Name" id="firstNameRe">
+
+				<label for="lastNameRe">Last Name</label>
+				<input type="text" name="lastNameRe" placeholder="Last Name" id="lastNameRe">
+
+			</div>
+
+			<label for="date">Visit Date</label>
+			<input type="text" name="txtwdate" id="visitDate" placeholder="MM/DD/YYYY">
+
+			<label for="weight">Weight</label>
+			<input type="text" name="txtweight" id="weight2" placeholder="Kilograms">
+			<h4>Belly Measurements</h4>
+			<div class="container">
+				<label for="diameter">Abdominal Perimeter</label>
+				<input type="text" name="txtdiameter" placeholder="Centimeters (cm)" id="diameter">
+
+				<label for="uterheight">Uterine Height</label>
+				<input type="text" name="txtuterheight" placeholder="Centimeters (cm)" id="uterheight">
+			</div>
+			<h4>Vital Signs</h4>
+			<div class="container">
+				
+
+				<label for="BP">Blood Pressure</label>
+				<input type="text" name="txtBP" placeholder="mmHg" id="bp">
+
+				<label for="HR">Heart Rate</label>
+				<input type="text" name="txtHR" placeholder="BPM" id="hr">
+
+				<label for="RR">Respiratory Rate</label>
+				<input type="text" name="txtRR" placeholder="BPM" id="rr">
+
+				<label for="temperature">Temperature</label>
+				<input type="text" name="txtTemperature" placeholder="Celsius" id="temperature">
+			</div>
+
+			<label for="fetalHR">Fetal Heart Rate</label>
+			<input type="text" name="txtfetalHR" placeholder="BPM" id="fetalhr">
+
+			<label for="lab">Lab Tests</label>
+			<textarea id="lab" name="txtLab" placeholder="Tests done" style="height:120px"></textarea>
+
+			<label for="vaccines">Vaccines</label>
+			<textarea id="vaccines" name="txtvaccines" placeholder="Vaccines names" style="height:120px"></textarea>
+
+			<!-- Ultrasound here if in need later -->
+
+			<label for="symptoms">Symptoms</label>
+			<textarea id="symptoms" name="txtsymptoms" placeholder="Symptoms" style="height:120px"></textarea>
+
+			<label for="prescription">Prescription</label>
+			<textarea id="prescription" name="txtpresciption" placeholder="Medicines" style="height:120px"></textarea>
+
+			<label for="nextApt">Next Appointment</label>
+			<input type="text" name="txtnextApt" placeholder="MM/DD/YYYY" id="nextApt">
+
+			<label for="comments">Comments</label>
+			<textarea id="comments" name="txtcomments" placeholder="Notes/Comments" style="height:120px"></textarea>
+
+			<center>
+				<Button id="submitSecond">
+					Submit
+				</Button>
+				<Button id="goBack">
+					Go Back
+				</Button>
+			</center>
+		</div>	
+		<script src="formRevisitMidwife.js"></script>
+	</div>

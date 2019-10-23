@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+    <style>
+      img {
+        width: 25%;
+      }
+      body {font-family: Arial, Helvetica, sans-serif;}
+      button{
+        background-color: #30E1E9;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover{
+        background-color: #25A4AA;
+      }
+
+      .container{
+        border-radius: 5px;
+        background-color: #F2F2F2;
+        padding: 20px;
+      }
+      input[type=email]{
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      input[type=password]{
+        width: 50%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      fieldset{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <img src="logonew.png" alt="xPecting" >
+    <div class="container">
+      <h1>LOGIN</h1>
+      <input id="txtEmail" type="email" placeholder="Email">
+      <br>
+      <input id="txtPassword" type="password"
+      placeholder="Password">
+      <br>
+      <button id="btnLogin" class="btn btn-action">
+        Login
+      </button>
+
+      <button id="btnSignup" class="btn btn-secondary">
+        Signup
+      </button>
+      <p id="loginFailed" style="color: red"></p>
+      
+    </div>
+    </center>
+
+    <form>
+    <fieldset>
+      <div>
+        <input type="radio" name="radio" id="mother" value="mother"/>
+        <label>Expecting Mother</label>
+        <input type="radio" name="radio" id="midwife" value="midwife"/>
+        <label>Midwife</label>
+        <input type="radio" name="radio" id="doctor" value="other"/>
+        <label>Doctor</label>
+      </div>
+    </fieldset>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "maternityhealthcaremodel",
+  "version": "1.0.0",
+  "description": "health++",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isa3bel/MaternityHealthcareModel.git"
+  },
+  "author": "isabel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isa3bel/MaternityHealthcareModel/issues"
+  },
+  "homepage": "https://github.com/isa3bel/MaternityHealthcareModel#readme",
+  "dependencies": {
+    "firebase": "^7.2.1"
+  }
+}

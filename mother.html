@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+  <title>Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-auth.js"></script>
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.0.0/firebaseui.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<style>
+  img {
+        width: 25%;
+      }
+      body {font-family: Arial, Helvetica, sans-serif;}
+      button{
+        background-color: #30E1E9;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover{
+        background-color: #25A4AA;
+      }
+
+      .container{
+        border-radius: 5px;
+        background-color: #F2F2F2;
+        padding: 20px;
+      }
+      input{
+        width: 25%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+    </style>
+
+
+</head>
+
+<html>
+<center>
+  <img src="logonew.png" alt="xPecting" >
+  <h2>Patient's Homepage</h2>
+  <body>
+    <input type="text" id="firstSearch" placeholder="first name">
+    <br>
+    <input type="text" id="lastSearch" placeholder="last name">
+    <br>
+    <button id="searchUser" class="btn btn-action">
+        Search
+    </button>
+      <button id="btnLogout" class="btn btn-action">
+          Logout
+      </button>
+    </div>
+</center>
+  <div class="container">
+      <center>    
+        <p id="resTitle">
+      </center>
+
+      <p id="users">    
+      <p id="rev">
+    </p>
+
+    <script src="mother.js"></script>
+  </body>
+</html>
